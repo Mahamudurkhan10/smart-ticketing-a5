@@ -61,7 +61,7 @@
                     <h1 class="mb-5 text-4xl font-extrabold text-[#FFFFFF]">End-to-End Travel with </h1>
                     <p class="mb-5 text-4xl font-extrabold text-[#1DD100]">P Paribahan</p>
                     <p class="mb-5 font-inter font-normal text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] rounded-xl text-[#030712] text-xl font-bold">Buy Tickets</button>
+                    <button id="buy-btn" class="btn bg-[#1DD100] rounded-xl text-[#030712] text-xl font-bold">Buy Tickets</button>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
           <div>  <h1 class="font-raleway font-bold text-3xl text-[#030712]">Greenline Paribahan </h1>
             <p class="font-inter font-normal text-lg text-[#03071299]">Coach-009-WEB ! AC_Business</p></div>
           </div >
-          <div> <button class="btn bg-[#1DD10026] text-[#1DD100] text-lg font-medium "><span><img src="images/seat-green.png" alt=""></span> 40 Seats left</button>  </div>
+          <div> <button id="seat-loss" class="btn bg-[#1DD10026] text-[#1DD100] text-lg font-medium "><span><img src="images/seat-green.png" alt=""></span> 40 Seats left</button>  </div>
         </div>
         <div class="rounded-3xl bg-[#F7F8F8] p-2">
           <div class="flex justify-between mt-7 mb-3"> 
@@ -153,13 +153,13 @@
       </div>
       <div class="flex flex-col gap-3 ">
         <p><img src="images/fare.png" alt=""></p>
-        <h1>550 Taka
+        <h1 class="font-raleway  font-bold text-3xl text-[#030712]" > <span id="Price">550</span> Taka
         </h1>
-        <p>Per Seat </p>
+        <p class="font-raleway font-semibold text-2xl text-[#03071299]">Per Seat </p>
       </div>
      </div>
       </section>
-      <section class="flex flex-col lg:flex-row justify-between  mt-10 gap-9">
+      <section id=" select-seat" class="flex flex-col lg:flex-row justify-between  mt-10 gap-9">
         <div class=" text-center lg:w-1/2">
           <div>
             <h1 class="font-raleway font-bold text-2xl text-[#030712]  mb-4">Select Your Seat</h1>
@@ -172,62 +172,62 @@
               <hr>
               <div class="flex p-3 justify-end mt-3"><button class="btn rounded-xl bg-[#0307121A]  
                 "><span class="p-3 "><img src="images/Vector.png" alt=""></span></button> </div>
-                <div class="flex p-3 flex-col gap-5 mt-6">
+                <div id="current-alphabet" class=" flex p-3 flex-col gap-5 mt-6">
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>A</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
+                    <kbd  id="A1" class="kbd pl-6 pr-6 pt-4 pb-4">A1</kbd>
+                            <kbd id="A2" class="kbd pl-6 pr-6 pt-4 pb-4">A2</kbd>
+                            <kbd id="A3" class="kbd pl-6 pr-6 pt-4 pb-4">A3</kbd>
+                            <kbd id="A4" class="kbd pl-6 pr-6 pt-4 pb-4">A4</kbd>
                   </div>
                   <div class="flex  justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>B</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">B1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">B2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">B3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">B4</kbd>
+                    <kbd id="B1" class="kbd pl-6 pr-6 pt-4 pb-4">B1</kbd>
+                            <kbd id="B2" class="kbd pl-6 pr-6 pt-4 pb-4">B2</kbd>
+                            <kbd id="B3" class="kbd pl-6 pr-6 pt-4 pb-4">B3</kbd>
+                            <kbd id="B4" class="kbd pl-6 pr-6 pt-4 pb-4">B4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>C</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">C1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">C2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">C3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">C4</kbd>
+                    <kbd id="C1" class="kbd pl-6 pr-6 pt-4 pb-4">C1</kbd>
+                            <kbd id="C2" class="kbd pl-6 pr-6 pt-4 pb-4">C2</kbd>
+                            <kbd id="C3" class="kbd pl-6 pr-6 pt-4 pb-4">C3</kbd>
+                            <kbd id="C4" class="kbd pl-6 pr-6 pt-4 pb-4">C4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>D</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">D1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">D2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">D3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">D4</kbd>
+                    <kbd id="D1" class="kbd pl-6 pr-6 pt-4 pb-4">D1</kbd>
+                            <kbd id="D2" class="kbd pl-6 pr-6 pt-4 pb-4">D2</kbd>
+                            <kbd id="D3" class="kbd pl-6 pr-6 pt-4 pb-4">D3</kbd>
+                            <kbd id="D4" class="kbd pl-6 pr-6 pt-4 pb-4">D4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>E</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">E1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">E2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">E3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">E4</kbd>
+                    <kbd id="E1" class="kbd pl-6 pr-6 pt-4 pb-4">E1</kbd>
+                            <kbd id="E2" class="kbd pl-6 pr-6 pt-4 pb-4">E2</kbd>
+                            <kbd id="E3" class="kbd pl-6 pr-6 pt-4 pb-4">E3</kbd>
+                            <kbd id="E4" class="kbd pl-6 pr-6 pt-4 pb-4">E4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>F</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">F1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">F2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">F3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">F4</kbd>
+                    <kbd id="F1" class="kbd pl-6 pr-6 pt-4 pb-4">F1</kbd>
+                            <kbd id="F2" class="kbd pl-6 pr-6 pt-4 pb-4">F2</kbd>
+                            <kbd id="F3" class="kbd pl-6 pr-6 pt-4 pb-4">F3</kbd>
+                            <kbd id="F4" class="kbd pl-6 pr-6 pt-4 pb-4">F4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>G</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">G1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">G2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">G3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">G4</kbd>
+                    <kbd id="G1" class="kbd pl-6 pr-6 pt-4 pb-4">G1</kbd>
+                            <kbd id="G2" class="kbd pl-6 pr-6 pt-4 pb-4">G2</kbd>
+                            <kbd id="G3" class="kbd pl-6 pr-6 pt-4 pb-4">G3</kbd>
+                            <kbd id="G4" class="kbd pl-6 pr-6 pt-4 pb-4">G4</kbd>
                   </div>
                   <div class="flex justify-between items-center text-[#03071280] font-bold text-2xl  ">
                     <h1>H</h1>
-                    <kbd class="kbd pl-6 pr-6 pt-4 pb-4">H1</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">H2</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">H3</kbd>
-                            <kbd class="kbd pl-6 pr-6 pt-4 pb-4">H4</kbd>
+                    <kbd id="H1" class="kbd pl-6 pr-6 pt-4 pb-4">H1</kbd>
+                            <kbd id="H2" class="kbd pl-6 pr-6 pt-4 pb-4">H2</kbd>
+                            <kbd id="H3" class="kbd pl-6 pr-6 pt-4 pb-4">H3</kbd>
+                            <kbd id="H4" class="kbd pl-6 pr-6 pt-4 pb-4">H4</kbd>
                   </div>
                 </div>
         </div>
@@ -243,21 +243,22 @@
                     <p class="font-extrabold text-xl">Class</p>
                     <p class="font-extrabold text-xl">Price</p>
                 </div>
-                <div id="container">
+
+                <div id="container" class="flex flex-col mt-3 text-[#03071299] font-inter font-normal text-lg ">
               
                 </div>
                 <hr class="mt-20">
                 <div class="flex justify-between items-center mt-4 font-extrabold text-xl">
                     <h1>Total Price</h1>
-                    <p>BDT: 0</p>
+                    <p>BDT: <span id="total-price">0</span> </p>
                 </div>
                 <div class="join w-full mt-4">
-                    <input type="text" placeholder="Have any coupon?" class="input input-bordered w-full" />
-                    <button id="btn-apply" class="btn join-item  bg-[#1DD100]">Apply</button>
+                    <input id="type-coupon" type="text" placeholder="Have any coupon?" class="input input-bordered w-full" />
+                    <button id="apply"  class="btn join-item  bg-[#1DD100]">Apply</button>
                 </div>
                 <div class="flex justify-between items-center mt-6 font-extrabold text-xl">
                     <h1>Grand Total</h1>
-                    <p>BDT: 0</p>
+                    <p>BDT: <span id="grand-total">0</span> </p>
                 </div>
             </div>
             <div>
@@ -317,5 +318,7 @@
     
  
    </footer>
+   <script src="script/bus.js"></script>
+   <script src="script/condition.js"></script>
 </body>
 </html>
