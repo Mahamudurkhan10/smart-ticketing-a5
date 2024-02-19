@@ -1,23 +1,23 @@
 const mySeat = document.getElementsByClassName('kbd')
-let count = 0;
+let number = 0;
 let countLoss = 40;
 let total = 0;
 for ( const set of mySeat  ){        
 set.addEventListener('click', function(){
     console.log(set)
     
-    count = count + 1;
+    number = number + 1;
    
   
-    if( count > 4){
+    if( number > 4){
       alert('no seat')
-      count.removeEventListener('click',function(){
+      number.removeEventListener('click',function(){
         
        
       })
         
     }
-    document.getElementById('seat-count').innerText = count
+    document.getElementById('seat-count').innerText = number
     set.classList.add('bg-green-400')
     countLoss = countLoss - 1;
     document.getElementById('seat-loss').innerText = countLoss;
@@ -36,7 +36,7 @@ set.addEventListener('click', function(){
         p.innerText = btnName
 
         const p1 = document.createElement('p')
-        p1.innerText = 'employee'
+        p1.innerText = 'Economoy'
 
         const p2 = document.createElement('p')
         p2.innerText = prices
@@ -68,6 +68,7 @@ apply.addEventListener('click',function(){
       const grandTotal=  document.getElementById('grand-total')
         const offer = total - (total*15/100);
         grandTotal.innerText = offer;
+        hideElementById('apply-hide')
        
     }
    
@@ -76,7 +77,7 @@ apply.addEventListener('click',function(){
       const grandTotal=  document.getElementById('grand-total')
         const offer = total - (total*20/100);
         grandTotal.innerText = offer;
-       
+        hideElementById('apply-hide')
     }
     else {
       alert('please give coupon code ')
@@ -90,4 +91,7 @@ function next(){
   hideElementById('main');
   hideElementById('footer')
   showElementById('success')
+}
+function buy(){
+  hideElementById('header')
 }

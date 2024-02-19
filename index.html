@@ -19,7 +19,7 @@
   </style>
 </head>
 <body > 
-  <section id="success" class="container rounded-3xl shadow-sm bg-gray-200 mx-auto p-10 mt-[300px] hidden">
+  <section id="success" class="container rounded-3xl shadow-sm bg-gray-200 mx-auto p-10 mt-7 ml-3 mr-3 lg:mt-[300px] hidden">
     <div class="flex justify-center text-center  items-center flex-col" > 
        <div> 
         <span><img src="images/success.png" alt=""></span>
@@ -78,7 +78,7 @@
                     <h1 class="mb-5 text-4xl font-extrabold text-[#FFFFFF]">End-to-End Travel with </h1>
                     <p class="mb-5 text-4xl font-extrabold text-[#1DD100]">P Paribahan</p>
                     <p class="mb-5 font-inter font-normal text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button id="buy-btn"   class="btn bg-[#1DD100] rounded-xl text-[#030712] text-xl font-bold">Buy Tickets</button>
+                    <button id="buy-btn" onclick="buy()"  class="btn bg-[#1DD100] rounded-xl text-[#030712] text-xl font-bold">Buy Tickets</button>
                   </div>
                 </div>
               </div>
@@ -269,7 +269,7 @@
                     <h1>Total Price</h1>
                     <p>BDT: <span id="total-price">0</span> </p>
                 </div>
-                <div class="join w-full mt-4">
+                <div id="apply-hide" class="join w-full mt-4">
                     <input id="type-coupon" type="text" placeholder="Have any coupon?" class="input input-bordered w-full" />
                     <button id="apply"  class="btn join-item  bg-[#1DD100]">Apply</button>
                 </div>
@@ -293,8 +293,15 @@
                 </div>
                 <button onclick="next()" class="btn btn-success w-full mt-6 font-extrabold text-xl text-gray-200">Next</button>
             </div>
+            <div class="flex justify-between mt-5">
+              <a  href=""  class="text-lg font-normal font-inter text-[#03071299]">Terms and Conditions</a>
+              <a href="" class="text-lg font-normal font-inter text-[#03071299]">Cancellation Policy</a>
+             
+
+            </div>
         </div>
         </div>
+
       </section>
    </main>
    <footer id="footer" class="bg-[#030712] h-[465px] container mx-auto mt-5 ">
