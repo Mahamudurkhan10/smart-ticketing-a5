@@ -1,6 +1,6 @@
 const mySeat = document.getElementsByClassName('kbd')
 let number = 0;
-let countLoss = 40;
+let setLoss = 40;
 let total = 0;
 for ( const set of mySeat  ){        
 set.addEventListener('click', function(){
@@ -19,8 +19,8 @@ set.addEventListener('click', function(){
     }
     document.getElementById('seat-count').innerText = number
     set.classList.add('bg-green-400')
-    countLoss = countLoss - 1;
-    document.getElementById('seat-loss').innerText = countLoss;
+    setLoss = setLoss - 1;
+    document.getElementById('seat-loss').innerText = setLoss;
     
     const btnName = set.innerText
       
