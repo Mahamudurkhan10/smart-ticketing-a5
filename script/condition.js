@@ -5,9 +5,20 @@ let total = 0;
 for ( const set of mySeat  ){        
 set.addEventListener('click', function(){
     console.log(set)
-    set.classList.add('bg-green-400')
+    
     count = count + 1;
+   
+  
+    if( count > 4){
+      alert('no seat')
+      count.removeEventListener('click',function(){
+        
+       
+      })
+        
+    }
     document.getElementById('seat-count').innerText = count
+    set.classList.add('bg-green-400')
     countLoss = countLoss - 1;
     document.getElementById('seat-loss').innerText = countLoss;
     
@@ -74,3 +85,9 @@ apply.addEventListener('click',function(){
     
 
 })
+function next(){
+  hideElementById('header');
+  hideElementById('main');
+  hideElementById('footer')
+  showElementById('success')
+}
